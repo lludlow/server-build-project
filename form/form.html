@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Server Build Generator</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Build Info</a></h1>
+		<form id="form_118073" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Untitled Form</h2>
+			<p>This is your form description. Click here to edit.</p>
+		</div>						
+			<ul >
+			
+					<li id="li_3" >
+		<label class="description" for="element_3">Host Name </label>
+		<div>
+			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_3"><small>Host Name of the server</small></p> 
+		</li>		<li id="li_1" >
+		<label class="description" for="element_1">IP Address </label>
+		<div>
+			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_1"><small>Enter IP Address of the server</small></p> 
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Subnet Mask </label>
+		<div>
+			<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_5"><small>Enter Subnet Mask of the server</small></p> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">MAC Address (no : or -) </label>
+		<div>
+			<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_2"><small>Enter MAC address of Primary NIC with no dashes or colons</small></p> 
+		</li>		<li id="li_7" >
+		<label class="description" for="element_7">Server Purpose </label>
+		<div>
+		<select class="element select medium" id="element_7" name="element_7"> 
+			<option value="" selected="selected"></option>
+<option value="1" >Generic</option>
+<option value="2" >Cluster</option>
+<option value="3" >OES</option>
+<option value="4" >Oracle</option>
+
+		</select>
+		</div><p class="guidelines" id="guide_7"><small>Select the primary role of the server, all that are not listed should be Generic</small></p> 
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">OS Version </label>
+		<div>
+		<select class="element select medium" id="element_6" name="element_6"> 
+			<option value="1" >OES1</option>
+<option value="2" >SLES 10 SP1 32</option>
+<option value="3" >SLES 10 SP1 64</option>
+<option value="4" >SLES 10 SP2 32</option>
+<option value="5" selected="selected">SLES 10 SP2 64</option>
+
+		</select>
+		</div><p class="guidelines" id="guide_6"><small>Select the OS you are going to build</small></p> 
+		</li>		<li id="li_8" >
+		<label class="description" for="element_8">Virtual / Physical </label>
+		<div>
+		<select class="element select medium" id="element_8" name="element_8"> 
+			<option value="1" selected="selected">Virtual Server</option>
+<option value="2" >Physical Server</option>
+
+		</select>
+		</div> 
+		</li>		<li id="li_9" >
+		<label class="description" for="element_9">San Attached </label>
+		<div>
+		<select class="element select medium" id="element_9" name="element_9"> 
+			<option value="1" >Yes - San attached</option>
+<option value="2" selected="selected">No - Not SAN attached</option>
+
+		</select>
+		</div><p class="guidelines" id="guide_9"><small>Is the server going to be SAN attached</small></p> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Text </label>
+		<div>
+			<input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="118073" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		<div id="footer">
+			Created by: Larry Ludlow
+		</div>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>

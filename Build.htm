@@ -1,0 +1,1275 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Build_files/filelist.xml">
+<link rel=Edit-Time-Data href="Build_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Server Build Documentation</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>University of Michigan</o:Author>
+  <o:Template>server build document.dot</o:Template>
+  <o:LastAuthor>University of Michigan</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>193</o:TotalTime>
+  <o:LastPrinted>2008-04-23T18:25:00Z</o:LastPrinted>
+  <o:Created>2008-12-19T19:37:00Z</o:Created>
+  <o:LastSaved>2008-12-19T19:37:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>563</o:Words>
+  <o:Characters>3213</o:Characters>
+  <o:Company>University of Michigan Medical Center</o:Company>
+  <o:Lines>26</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3769</o:CharactersWithSpaces>
+  <o:Version>10.6626</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#606420;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.5in .75in .7in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:22.5pt;
+	mso-even-header:url("Build_files/header.htm") eh1;
+	mso-header:url("Build_files/header.htm") h1;
+	mso-even-footer:url("Build_files/header.htm") ef1;
+	mso-footer:url("Build_files/header.htm") f1;
+	mso-first-header:url("Build_files/header.htm") fh1;
+	mso-first-footer:url("Build_files/header.htm") ff1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink="#606420" style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'>Server Build Documentation<o:p></o:p></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>         </span>Staff
+assignment:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Staff'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Staff'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Staff></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0A8000000000050053007400610066006600000000000000000000000000000000000000000000000000FFFF07000000010020000E005000610074007200690063006B0020004C0061007500720069006E000C004C00610072007200790020004C00750064006C006F0077000E005300740065007600650020004D0063006B0065006C007600650079000F004B0075006D00610072002000520061006D006100720061006A0061006E0009004A006F0068006E0020005300640061006F000C0054006F006400640020005300740072006100750063006800</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Staff'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Staff'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                               </span>Date:
+<span style='mso-tab-count:1'>   </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>DATE \@ &quot;MMMM d, yyyy&quot; <span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-size:10.0pt'><span style='mso-no-proof:yes'>December 19, 2008</span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                </span>Site:<span
+style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown1'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown1'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown1></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0A80000000000900440072006F00700064006F0077006E003100000000000000000000000000000000000000000000000000FFFF03000000010020000B004100720062006F00720020004C0061006B00650073000E0054006100750062006D0061006E002000430065006E00740065007200</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown1'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown1'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                         </span>Serial
+Number:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text2'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text2'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text2></a><![endif]>USE809NCX9<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0000000014000500540065007800740032000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text2'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text2'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                             </span>Room:<span
+style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown2'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown2'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown2></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000900440072006F00700064006F0077006E003200000000000000000000000000000000000000000000000000FFFF0500000001002000060042003100200031003700390006004200310020003300340034000400310033003000300004003100350030003000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown2'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown2'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                  </span>Asset
+Tag Number:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text3'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text3'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text3></a><![endif]>320802<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0000000014000500540065007800740033000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text3'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text3'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                    </span>Cabinet
+ID:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text4'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text4'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text4></a><![endif]>Q17.22<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0000000014000500540065007800740034000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text4'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text4'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                                       </span>Model:<span
+style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown3'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown3'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown3></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF1A80000000000900440072006F00700064006F0077006E003300000000000000000000000000000000000000000000000000FFFF0C00000001002000050042004C00320030005000080044004C00330038003000200047003100080044004C00330038003000200047003200080044004C00330038003000200047003300080044004C00330038003500200047003100080044004C00330038003500200047003200080044004C00350038003000200047003100080044004C00350038003000200047003200080044004C00350038003500200047003100080044004C003500380035002000470032000F005600690072007400750061006C0020004D0061006300680069006E006500</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown3'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown3'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:3'>                                                                                                                                           </span>VM
+Host:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text24'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text24'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text24></a><![endif]><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400320034000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text24'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text24'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                </span>NIC
+1 Switch:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text5'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text5'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text5></a><![endif]>172.20.249.37<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F0000000500540065007800740035000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text5'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text5'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                      </span>NIC
+1 Port:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text9'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text9'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text9></a><![endif]>4/37<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0000040000000500540065007800740039000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text9'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text9'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                </span>NIC
+2 Switch:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text6'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text6'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text6></a><![endif]><span style='mso-no-proof:yes'>172.20.249.38</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F0000000500540065007800740036000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text6'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text6'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                      </span>NIC
+2 Port:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text10'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text10'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text10></a><![endif]><span style='mso-no-proof:yes'>4/38</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000400000006005400650078007400310030000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text10'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text10'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                </span>NIC
+3 Switch:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text7'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text7'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text7></a><![endif]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F0000000500540065007800740037000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text7'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text7'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                                 </span>NIC
+3 Port:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text11'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text11'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text11></a><![endif]>&nbsp;&nbsp;&nbsp;&nbsp;<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000400000006005400650078007400310031000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text11'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text11'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                </span>NIC
+4 Switch:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text8'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text8'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text8></a><![endif]><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F0000000500540065007800740038000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text8'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text8'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                                 </span>NIC
+4 Port:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text12'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text12'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text12></a><![endif]><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000400000006005400650078007400310032000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text12'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text12'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                            </span>VLAN:<span
+style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text14'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text14'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text14></a><![endif]>2<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000300000006005400650078007400310034000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text14'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text14'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                                                  </span>iLO
+IP:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text13'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text13'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text13></a><![endif]>172.20.190.122<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F00000006005400650078007400310033000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text13'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text13'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>          </span>Eth0 IP
+Address:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text15'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text15'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text15></a><![endif]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F00000006005400650078007400310035000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text15'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text15'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                </span>Eth0
+</span><st1:stockticker><span style='font-size:10.0pt'>MAC</span></st1:stockticker><span
+style='font-size:10.0pt'> Address:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text19'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text19'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text19></a><![endif]>00:1E:0B:74:45:1E<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00001100000006005400650078007400310039000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text19'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text19'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>          </span>Eth1 IP
+Address:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text16'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text16'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text16></a><![endif]><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F00000006005400650078007400310036000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text16'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text16'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                </span>Eth1
+</span><st1:stockticker><span style='font-size:10.0pt'>MAC</span></st1:stockticker><span
+style='font-size:10.0pt'> Address:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text20'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text20'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text20></a><![endif]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00001100000006005400650078007400320030000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text20'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text20'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>          </span>Eth2 IP
+Address:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text17'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text17'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text17></a><![endif]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F00000006005400650078007400310037000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text17'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text17'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                </span>Eth2
+</span><st1:stockticker><span style='font-size:10.0pt'>MAC</span></st1:stockticker><span
+style='font-size:10.0pt'> Address:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text21'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text21'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text21></a><![endif]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00001100000006005400650078007400320031000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text21'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text21'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>          </span>Eth3 IP
+Address:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text18'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text18'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text18></a><![endif]><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000F00000006005400650078007400310038000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text18'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text18'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                </span>Eth3
+</span><st1:stockticker><span style='font-size:10.0pt'>MAC</span></st1:stockticker><span
+style='font-size:10.0pt'> Address:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text22'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text22'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text22></a><![endif]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00001100000006005400650078007400320032000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text22'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text22'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>         </span>NIC
+Bonding Set:<span style='mso-tab-count:1'>    </span> </span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown35'><span
+style='mso-spacerun:yes'> </span>FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown35'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown35></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000A00440072006F00700064006F0077006E0033003500000000000000000000000000000000000000000000000000FFFF0200000002004E006F000300590065007300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown35'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown35'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                              </span>Bonding
+Type:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown36'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown36'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown36></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000A00440072006F00700064006F0077006E0033003600000000000000000000000000000000000000000000000000FFFF020000000A004E006F00200042006F006E00640069006E0067000F0041006300740069007600650020002F0020004200610063006B0075007000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown36'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown36'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>     </span>Bonded
+Addresses:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text33'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text33'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text33></a><![endif]><span style='mso-no-proof:yes'>172.20.2.28</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400330033000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text33'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text33'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                                             </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>         </span>Production
+Level:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown4'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown4'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown4></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0E80000000000900440072006F00700064006F0077006E003400000000000000000000000000000000000000000000000000FFFF07000000010020001100500072006F00640075006300740069006F006E0020004C00650076006500200031001200500072006F00640075006300740069006F006E0020004C006500760065006C00200032001200500072006F00640075006300740069006F006E0020004C006500760065006C00200033001200500072006F00640075006300740069006F006E0020004C006500760065006C0020003400130044006500760065006C006F0070006D0065006E00740020004C006500760065006C0020003100130044006500760065006C006F0070006D0065006E00740020004C006500760065006C0020003200</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown4'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown4'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                       </span>Server
+Name:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text23'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text23'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text23></a><![endif]>ORADBPROD01 (-RPL)<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400320033000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text23'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text23'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><b
+style='mso-bidi-font-weight:normal'>Deployment Checklist<o:p></o:p></b></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                      </span>DNS
+entry for server:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown5'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown5'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown5></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000900440072006F00700064006F0077006E003500000000000000000000000000000000000000000000000000FFFF0400000008004E006F007400200044006F006E006500040044006F006E0065000C004E006F00740020005200650071007500690072006500640002004E004100</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown5'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown5'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                           </span>DNS
+entry for iLO:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown6'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown6'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown6></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000900440072006F00700064006F0077006E003600000000000000000000000000000000000000000000000000FFFF0300000008004E006F007400200044006F006E006500040044006F006E00650002004E004100</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown6'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown6'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                          </span>Thermal
+shutdown:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown7'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown7'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown7></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000900440072006F00700064006F0077006E003700000000000000000000000000000000000000000000000000FFFF03000000070045006E00610062006C00650064000800440069007300610062006C006500640002004E004100</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown7'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown7'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                                   </span>ASR:<span
+style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown8'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown8'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown8></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000900440072006F00700064006F0077006E003800000000000000000000000000000000000000000000000000FFFF03000000070045006E00610062006C00650064000800440069007300610062006C006500640002004E004100</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown8'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown8'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                               </span>Hardware
+Clock:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown9'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown9'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown9></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000900440072006F00700064006F0077006E003900000000000000000000000000000000000000000000000000FFFF020000000B004E006F007400200043006800650063006B0065006400210043006800650063006B0065006400200066006F007200200043006F007200720065006300740020004400610074006500200061006E0064002000540069006D006500</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown9'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown9'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                </span>Local
+time set via YAST:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown22'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown22'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown22></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000A00440072006F00700064006F0077006E0032003200000000000000000000000000000000000000000000000000FFFF0200000007004E006F00740020005300650074000300530065007400</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown22'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown22'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                         </span>Build
+type:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown10'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown10'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown10></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF1A80000000000A00440072006F00700064006F0077006E0031003000000000000000000000000000000000000000000000000000FFFF0700000004004E006F006E0065000A0053004C00450053002000390020007300700033000E0053004C00450053002000390020004F004500530020007300700032000D004F00450053002000310030002D0033003200200073007000310010004F00450053002000310030002D003300320020007300700031002000760032000D004F00450053002000310030002D0036003400200073007000310010004F00450053002000310030002D00360034002000730070003100200076003200</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown10'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown10'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                       </span>ZLM
+client installed:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown23'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown23'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown23></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000A00440072006F00700064006F0077006E0032003300000000000000000000000000000000000000000000000000FFFF0200000002004E006F000300590065007300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown23'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown23'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                       </span>Version:<span
+style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown24'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown24'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown24></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0032003400000000000000000000000000000000000000000000000000FFFF0400000001002000070037002E0031002000490052003100030037002E0032000A0037002E0032002000490052003100200048005000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown24'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown24'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                      </span>ZLM
+device location:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown27'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown27'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown27></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0A80000000000A00440072006F00700064006F0077006E0032003700000000000000000000000000000000000000000000000000FFFF0A000000010020000B00530065007200760065007200200052006F006F00740009004E00650077007300650072007600650072000700520075006E0020003100730074000700520075006E00200032006E0064000700520075006E0020003300720064000700520075006E0020003400740068000700520075006E0020003500740068000700520075006E0020003600740068000700520075006E002000370074006800</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown27'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown27'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                      </span>ZLM update
+group:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown26'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown26'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown26></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0032003600000000000000000000000000000000000000000000000000FFFF09000000010020000900200054006500730074002000520075006E000A0044006100790020003100200030003600300030000A0044006100790020003100200031003000300030000A0044006100790020003100200031003400300030000A0044006100790020003200200030003600300030000A0044006100790020003200200031003000300030000A0044006100790020003200200031003400300030000A004400610079002000330020003000360030003000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown26'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown26'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                               </span>Poweroff
+group:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown25'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown25'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown25></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0032003500000000000000000000000000000000000000000000000000FFFF0900000001002000130061006C0020006200310066003100200064006500760020003100200061006E00640020003200130061006C0020006200320066003100200064006500760020003100200061006E00640020003200140061006C00200062003200660031002000700072006F00640020003100200061006E00640020003200140061006C00200062003200660031002000700072006F00640020003300200061006E00640020003400140074006300200062003100310037003900200064006500760020003100200061006E006400200032001500740063002000620031003100370039002000700072006F00640020003100200061006E006400200032001500740063002000620031003100370039002000700072006F00640020003300200061006E00640020003400140074006300200062003100330034003400200064006500760020003100200061006E00640020003200</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown25'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown25'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                 </span>Kernel
+version:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown11'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown11'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown11></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF1680000000000A00440072006F00700064006F0077006E0031003100000000000000000000000000000000000000000000000000FFFF06000000010020000300320034003400030032003700360003003200380032000300320038003600020031003200</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown11'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown11'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                 </span>Security
+patch:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown12'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown12'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown12></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF6680000000000A00440072006F00700064006F0077006E0031003200000000000000000000000000000000000000000000000000FFFF1300000001002000070032003000300037002F0030003800070032003000300037002F0030003900070032003000300037002F0031003000070032003000300037002F0031003100070032003000300037002F0031003200070032003000300038002F0030003100070032003000300038002F0030003200070032003000300038002F0030003300070032003000300038002F0030003400070032003000300038002F0030003500070032003000300038002F0030003600070032003000300038002F0030003700070032003000300038002F0030003800070032003000300038002F0030003900070032003000300038002F0031003000070032003000300038002F0031003100070032003000300038002F0031003200070032003000300039002F0030003100</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown12'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown12'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                  </span>NAudit
+policy:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown37'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown37'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown37></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF6680000000000A00440072006F00700064006F0077006E0033003700000000000000000000000000000000000000000000000000FFFF020000000B004E006F00740020004100700070006C0069006500640007004100700070006C00690065006400</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown37'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown37'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                  </span>Default
+policy:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown13'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown13'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown13></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000A00440072006F00700064006F0077006E0031003300000000000000000000000000000000000000000000000000FFFF020000000B004E006F00740020004100700070006C0069006500640007004100700070006C00690065006400</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown13'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown13'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                        </span>PSP
+policy:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown14'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown14'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown14></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0031003400000000000000000000000000000000000000000000000000FFFF020000000B004E006F00740020004100700070006C0069006500640007004100700070006C00690065006400</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown14'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown14'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                       </span>Version:<span
+style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown15'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown15'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown15></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0031003500000000000000000000000000000000000000000000000000FFFF0400000001002000030037003500300003003700380030000300380030003000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown15'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown15'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                    </span>LDAP
+policy:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown16'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown16'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown16></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000A00440072006F00700064006F0077006E0031003600000000000000000000000000000000000000000000000000FFFF020000000B004E006F00740020004100700070006C0069006500640007004100700070006C00690065006400</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown16'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown16'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                       </span>Node
+added to </span><st1:stockticker><span style='font-size:10.0pt'>TSM</span></st1:stockticker><span
+style='font-size:10.0pt'>:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown18'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown18'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown18></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0031003800000000000000000000000000000000000000000000000000FFFF0200000002004E006F000300590065007300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown18'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown18'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                        </span>Retention
+period:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown19'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown19'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown19></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0031003900000000000000000000000000000000000000000000000000FFFF04000000010020000200310035000200360030000300340030003000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown19'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown19'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>                                      </span></span><st1:stockticker><span
+ style='font-size:10.0pt'>TSM</span></st1:stockticker><span style='font-size:
+10.0pt'> policy:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown20'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown20'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown20></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0032003000000000000000000000000000000000000000000000000000FFFF020000000B004E006F00740020004100700070006C0069006500640007004100700070006C00690065006400</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown20'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown20'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                       </span>Version:<span
+style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown21'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown21'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown21></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0032003100000000000000000000000000000000000000000000000000FFFF0400000001002000030035002E003500030035002E003400030035002E003300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown21'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown21'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><b
+style='mso-bidi-font-weight:normal'>Remedy Checklist<o:p></o:p></b></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check1'><span style='mso-spacerun:yes'> </span>FORMCHECKBOX
+</span></span><![endif]--><span style='mso-bookmark:Check1'><span
+style='font-size:10.0pt'><![if !supportNestedAnchors]><a name=Check1></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400060043006800650063006B003100000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check1'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check1'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Popular Name<span style='mso-tab-count:1'>                                                </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check2'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check2'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check2></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400060043006800650063006B003200000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check2'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check2'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Status<span style='mso-tab-count:1'>                                                              </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check3'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check3'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check3></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF010000001400060043006800650063006B003300000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check3'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check3'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Server Function<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check4'><span style='mso-spacerun:yes'> </span>FORMCHECKBOX
+</span></span><![endif]--><span style='mso-bookmark:Check4'><span
+style='font-size:10.0pt'><![if !supportNestedAnchors]><a name=Check4></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF010000001400060043006800650063006B003400000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check4'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check4'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Production Level<span style='mso-tab-count:
+1'>                                           </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check5'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check5'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check5></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400060043006800650063006B003500000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check5'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check5'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>OS Owner<span style='mso-tab-count:1'>                                                       </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check6'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check6'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check6></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400060043006800650063006B003600000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check6'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check6'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Application Owner<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check7'><span style='mso-spacerun:yes'> </span>FORMCHECKBOX
+</span></span><![endif]--><span style='mso-bookmark:Check7'><span
+style='font-size:10.0pt'><![if !supportNestedAnchors]><a name=Check7></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF010000001400060043006800650063006B003700000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check7'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check7'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Database Owner<span style='mso-tab-count:
+1'>                                            </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check8'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check8'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check8></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400060043006800650063006B003800000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check8'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check8'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>OS<span style='mso-tab-count:1'>                                                                    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check9'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check9'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check9></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400060043006800650063006B003900000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check9'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check9'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>OS Version<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check10'><span
+style='mso-spacerun:yes'> </span>FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check10'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check10></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF010000001400070043006800650063006B0031003000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check10'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check10'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Site<span style='mso-tab-count:1'>                                                                  </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check11'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check11'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check11></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400070043006800650063006B0031003100000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check11'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check11'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Room<span style='mso-tab-count:1'>                                                               </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check12'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check12'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check12></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400070043006800650063006B0031003200000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check12'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check12'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Cabinet ID<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check13'><span
+style='mso-spacerun:yes'> </span>FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check13'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check13></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400070043006800650063006B0031003300000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check13'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check13'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Network/IP Address 1<span style='mso-tab-count:
+1'>                                  </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check14'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check14'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check14></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400070043006800650063006B0031003400000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check14'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check14'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>iLO IP Address<span style='mso-tab-count:
+1'>                                              </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check15'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check15'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check15></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF050000001400070043006800650063006B0031003500000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check15'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check15'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Serial Number<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check16'><span
+style='mso-spacerun:yes'> </span>FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check16'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check16></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF010000001400070043006800650063006B0031003600000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check16'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check16'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Capital Asset Tag<span style='mso-tab-count:
+1'>                                         </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check17'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check17'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check17></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF010000001400070043006800650063006B0031003700000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check17'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check17'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Impact Loss of Service<span style='mso-tab-count:
+1'>                                 </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check18'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check18'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check18></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF010000001400070043006800650063006B0031003800000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check18'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check18'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>IP Table LAN Entry<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check19'><span
+style='mso-spacerun:yes'> </span>FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check19'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check19></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF010000001400070043006800650063006B0031003900000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check19'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check19'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>IP Table iLO Entry<span style='mso-tab-count:
+1'>                                        </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Check20'> FORMCHECKBOX </span></span><![endif]--><span
+style='mso-bookmark:Check20'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Check20></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF650000001400070043006800650063006B0032003000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Check20'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Check20'></span><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>Linux Volume Management Entry<span
+style='mso-tab-count:1'>              </span><o:p></o:p></span></p>
+
+<span style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:2.5in 5.0in'><b
+style='mso-bidi-font-weight:normal'>SAN Storage<o:p></o:p></b></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><span style='font-size:10.0pt'>Does
+this server use </span><st1:stockticker><span style='font-size:10.0pt'>SAN</span></st1:stockticker><span
+style='font-size:10.0pt'> storage? </span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown32'><span
+style='mso-spacerun:yes'> </span>FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown32'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown32></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF6680000000000A00440072006F00700064006F0077006E0033003200000000000000000000000000000000000000000000000000FFFF0200000002004E006F000300590065007300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown32'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown32'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><span style='font-size:10.0pt'>If
+Yes, which storage pool? </span><!--[if supportFields]><span style='font-size:
+10.0pt'><span style='mso-element:field-begin'></span><span style='mso-bookmark:
+Dropdown33'><span style='mso-spacerun:yes'> </span>FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown33'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown33></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF6680000000000A00440072006F00700064006F0077006E0033003300000000000000000000000000000000000000000000000000FFFF0300000001002000060061006C0063007800300033000600740063006300780030003300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown33'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown33'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><span style='font-size:10.0pt'>Known
+LUN assignments: </span><!--[if supportFields]><span style='font-size:10.0pt'><span
+style='mso-element:field-begin'></span><span style='mso-bookmark:Text32'><span
+style='mso-spacerun:yes'> </span>FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text32'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text32></a><![endif]><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400330032000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text32'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text32'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:2.5in 5.0in'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>              </span>SAN
+1 Switch:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text26'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text26'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text26></a><![endif]><span style='mso-no-proof:yes'>N10</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400320036000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text26'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text26'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                                    </span>SAN
+1 Port:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text27'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text27'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text27></a><![endif]><span style='mso-no-proof:yes'>A11</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000700000006005400650078007400320037000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text27'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text27'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>              </span>SAN
+2 Switch:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text28'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text28'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text28></a><![endif]><span style='mso-no-proof:yes'>N10</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400320038000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text28'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text28'></span><span style='font-size:10.0pt'><span
+style='mso-tab-count:1'>                                                                                    </span>SAN
+2 Port:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text29'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text29'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text29></a><![endif]><span style='mso-no-proof:yes'>B11</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000600000006005400650078007400320039000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text29'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text29'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>              </span>SAN
+3 Switch:<span style='mso-tab-count:1'>    </span><span style='mso-field-code:
+" FORMTEXT "'><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400320036000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span><span style='mso-tab-count:1'>                                                                               </span>SAN
+3 Port:<span style='mso-tab-count:1'>    </span><span style='mso-field-code:
+" FORMTEXT "'><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000700000006005400650078007400320037000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>              </span>SAN
+4 Switch:<span style='mso-tab-count:1'>    </span><span style='mso-field-code:
+" FORMTEXT "'><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400320038000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span><span style='mso-tab-count:1'>                                                                               </span>SAN
+4 Port:<span style='mso-tab-count:1'>    </span><span style='mso-field-code:
+" FORMTEXT "'><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000600000006005400650078007400320039000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'>Retrieve the following information from
+/sys/class/scsi_host/host<b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>x</i></b>/port_name where <i
+style='mso-bidi-font-style:normal'>x</i> is the port number.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>   </span>HBA Port 0
+WWNN:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text30'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text30'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text30></a><![endif]><span style='mso-no-proof:yes'>0000C9724730</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400330030000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text30'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text30'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>   </span>HBA Port 1
+WWNN:<span style='mso-tab-count:1'>    </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text31'> FORMTEXT <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text31'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text31></a><![endif]><span style='mso-no-proof:yes'>0000C97242CC</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400330031000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text31'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text31'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>   </span>HBA Port 2
+WWNN:<span style='mso-tab-count:1'>    </span><span style='mso-field-code:" FORMTEXT "'><span
+style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400330030000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><span style='mso-tab-count:1'>   </span>HBA Port 3
+WWNN:<span style='mso-tab-count:1'>    </span><span style='mso-field-code:" FORMTEXT "'><span
+style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400330031000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.25in left 99.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:2.5in 5.0in'><b
+style='mso-bidi-font-weight:normal'>Miscellaneous Items Checklist<o:p></o:p></b></p>
+
+<p class=MsoNormal style='tab-stops:right 1.5in left 117.0pt right 351.0pt left 5.0in'><span
+style='mso-tab-count:1'>                                    </span></p>
+
+<p class=MsoNormal style='tab-stops:right 6.0in left 441.0pt'><span
+style='font-size:10.0pt'>Copy /etc/sysconfig/network/ifcfg-eth-id&lt;</span><st1:stockticker><span
+ style='font-size:10.0pt'>MAC</span></st1:stockticker><span style='font-size:
+10.0pt'> address&gt; to /etc/sysconfig/network/ifcfg-eth0:<span
+style='mso-tab-count:1'>      </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown28'> FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown28'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown28></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0280000000000A00440072006F00700064006F0077006E0032003800000000000000000000000000000000000000000000000000FFFF0300000008004E006F007400200044006F006E006500040044006F006E0065000B004E0049004300200042006F006E00640069006E006700</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown28'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown28'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'>Monitoring setup in SiteScope?: </span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown30'><span
+style='mso-spacerun:yes'> </span>FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown30'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown30></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF6680000000000A00440072006F00700064006F0077006E0033003000000000000000000000000000000000000000000000000000FFFF0200000002004E006F000300590065007300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown30'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown30'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'>Does the server show up in </span><st1:stockticker><span
+ style='font-size:10.0pt'>SIM</span></st1:stockticker><span style='font-size:
+10.0pt'>?: </span><!--[if supportFields]><span style='font-size:10.0pt'><span
+style='mso-element:field-begin'></span><span style='mso-bookmark:Dropdown34'><span
+style='mso-spacerun:yes'> </span>FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown34'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown34></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF6680000000000A00440072006F00700064006F0077006E0033003400000000000000000000000000000000000000000000000000FFFF0200000002004E006F000300590065007300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown34'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown34'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'>Server tagged with Server Name?: </span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Dropdown31'><span
+style='mso-spacerun:yes'> </span>FORMDROPDOWN </span></span><![endif]--><span
+style='mso-bookmark:Dropdown31'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Dropdown31></a><![endif]><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0680000000000A00440072006F00700064006F0077006E0033003100000000000000000000000000000000000000000000000000FFFF0200000002004E006F000300590065007300</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Dropdown31'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Dropdown31'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.5in left 117.0pt right 351.0pt left 5.0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:right 135.0pt left 2.0in right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'>Non-standard users and their UIDs:<span
+style='mso-spacerun:yes'>  </span></span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text1'><span style='mso-spacerun:yes'> </span>FORMTEXT <span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text1'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text1></a><![endif]><span style='mso-no-proof:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF0000000000000500540065007800740031000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text1'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text1'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.5in left 117.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.5in left 117.0pt right 351.0pt left 5.0in'><span
+style='font-size:10.0pt'>Special notes: </span><!--[if supportFields]><span
+style='font-size:10.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-bookmark:Text25'><span style='mso-spacerun:yes'> </span>FORMTEXT <span
+style='mso-element:field-separator'></span></span></span><![endif]--><span
+style='mso-bookmark:Text25'><span style='font-size:10.0pt'><![if !supportNestedAnchors]><a
+name=Text25></a><![endif]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--[if gte mso 9]><xml>
+ <w:data>FFFFFFFF00000000140006005400650078007400320035000000000000000000000000000000000000000000000000000000</w:data>
+</xml><![endif]--></span></span><!--[if supportFields]><span style='mso-bookmark:
+Text25'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:Text25'></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:right 1.5in left 117.0pt right 351.0pt left 5.0in'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
